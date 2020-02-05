@@ -1,0 +1,315 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+h2
+	text-transform: uppercase
+	color: $black
+	font-size: 46px
+	opacity: 0.8
+	letter-spacing: 5px
+	font-weight: 700
+	position: relative
+	text-align: center
+	&::after
+		content: ''
+		width: 60px
+		height: 4px
+		background-color: #212121
+		opacity: .6
+		position: absolute
+		left: 50%
+		top: -10px
+		display: block
+		transform: translateX(-50%)
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+.gray
+	background-color: $gray
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $black
+	font-family: "Asap", sans-serif
+	.header
+		background: url(../img/bg.jpg) no-repeat
+		background-size: cover
+		padding-top: 30px
+		.logoBlock
+			text-align: center
+			font-family: 'Lato', sans-serif
+			text-transform: uppercase
+			font-weight: 400
+			font-size: 14px
+			h3
+				letter-spacing: 2.4px
+			p
+				letter-spacing: 2px
+		.menu
+			list-style-type: none
+			position: fixed
+			right: 220px
+			z-index: 223
+			li
+				display: inline-block
+				margin-right: 38px
+				&:last-child
+					margin-right: 0px
+				a
+					font-size: 16px
+					text-transform: uppercase
+					color: $black
+					&:hover
+						text-decoration: none
+		.leftsideHeader
+			margin-top: 180px
+			h1
+				font-size: 90px
+				line-height: 67px
+				font-weight: 500
+			h3
+				font-size: 22px
+				opacity: .54
+				line-height: 47px
+				font-weight: 700
+			.button
+				margin-right: 20px
+.button
+	color: $black
+	font-weight: 500
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 16px
+	line-height: 67px
+	padding: 15px 40px
+	background-color: #fff
+	border: 1px solid transparent
+	transition: .3s ease all
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-color: $black
+		border: 1px solid $black
+.section
+	padding: $paddingtop 0px
+.aboutMe
+	h2
+		text-align: left
+		&::after
+			left: 6%
+	a
+		border: 1px solid $black
+		padding: 15px 40px
+	p
+		max-width: 470px
+.services
+	text-align: center
+	h2
+		margin-bottom: 55px
+	img
+		margin-bottom: 15px
+	.serviceItem
+		margin-bottom: 70px
+.skills
+	img
+		width: 100%
+	h2
+		margin-bottom: 35px
+	text-align: center
+.portfolio
+	text-align: center
+	.button
+		box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1)
+	.portExamples
+		margin-bottom: 25px
+	img
+		width: 100%
+		position: relative
+		transition: .5s ease
+		&:hover
+			bottom: 20px
+	.portfolioImgWrapper
+		margin-right: 15px
+		margin-bottom: 35px
+	h2
+		margin-bottom: 35px
+.carouselContainer
+	display: block
+	border: 1px solid $black
+	text-align: left
+	padding: 80px 80px 20px 80px
+	text-transform: uppercase
+	line-height: 49px
+	margin-top: 45px
+	h3
+		font-size: 30px
+		font-weight: 700
+	h4
+		font-size: 12px
+		font-style: italic
+		font-weight: 500
+	p
+		line-height: 26px
+		opacity: .9
+	.photoWrapper
+		display: inline-block
+		float: left
+		margin-right: 27px
+		margin-left: 35px
+.stats
+	text-align: center
+	padding: 60px 0
+	margin-bottom: 155px
+	.statsWords
+		text-transform: uppercase
+		font-size: 22px
+		line-height: 32px
+		font-weight: 500
+	.statsNumber
+		font-size: 30px
+		font-weight: 700
+.iconWrapper
+	img
+		width: 80px
+		height: 80px
+		margin-bottom: 20px
+.footer
+	background: url(../img/footerbg.jpg) no-repeat
+	background-size: cover
+	padding-bottom: 0px
+	position: relative
+	h2
+		color: #fff
+		&::after
+			background-color: #fff
+.contactForm
+	width: 800px
+	margin: 65px auto 50px
+	.button
+		left: 50%
+		position: relative
+		margin-left: -50px
+		font-weight: 700
+		&::after
+			content: ''
+			position: absolute
+			background: url(../img/sendButton.png)
+			width: 15px
+			height: 13px
+			background-size: 15px 13px
+			right: 20px
+			top: 18px
+	input, textarea
+		letter-spacing: 1px
+		opacity: .8
+	input
+		padding: 18px 10px
+		margin-right: 28px
+		width: 48%
+	.inputName
+		float: left
+	.inputEmail
+		float: right
+		margin-right: 0px
+textarea
+	margin: 30px 0
+	width: 100%
+	padding: 18px 10px
+.footerLine
+	width: 100%
+	border-top: 1px solid #fff
+	padding: 25px 0 0px
+	.iconBar
+		height: 50px
+		display: inline-block
+		a
+			color: $black
+			margin-right: 6px
+			display: inline-block
+			width: 27px
+			height: 27px
+			z-index: 212121
+			position: relative
+			text-align: center
+			background-color: #fff
+			&.twitter
+				background-color: #0084b4
+		i
+			font-size: 16px
+			&.fa-twitter
+				color: #fff
+.Rights
+	display: inline-block
+	width: 100%
+	text-align: center
+	color: #fff
+	font-size: italic
+	bottom: 50px
+	position: relative
+.slideUp
+	color: $black
+	background-color: #fff
+	display: inline-block
+	width: 45px
+	height: 45px
+	position: absolute
+	bottom: 163px
+	right: 100px
+	text-align: center
+
+	&:hover
+		color: $black
+	i
+		font-size: 25px
+		position: relative
+		transform: translateY(40%)
+.line-wrapp
+	width: 18px
+	height: 12px
+	position: absolute
+	display: none
+	top: 142px
+	right: 20px
+	z-index: 231321
+	transition: all 600ms ease-in-out
+
+.active.line-wrapp
+	transform: rotate(180deg)
+
+.line
+	width: 18px
+	height: 2px
+	background-color: #fff
+	transition: all 600ms ease-in-out
+
+.line.center
+	margin: 3px 0
+
+.active .line.top
+	width: 12px
+	transform: translateX(8px) translateY(1px) rotate(45deg)
+
+.active .line.bottom
+	width: 12px
+	transform: translateX(8px) translateY(-1px) rotate(-45deg)
+.aboutMe
+	img
+		width: 100%
+@media only screen and (max-width : 992px)
+	.aboutMe
+		h2
+			&::after
+				left: 10%

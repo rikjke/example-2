@@ -1,0 +1,94 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.leftsideHeader, .imgWrapper {
+  text-align: center;
+}
+body #home .leftsideHeader, .imgWrapper {
+  margin-top: 20px
+}
+body .header .menu {
+  right: 50px
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+body .footer .contactForm {
+  width: 100%;
+}
+body .footer .contactForm input {
+  width: 46%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  body .footer .footerLine .Rights {
+    text-align: right;
+  }
+  body .aboutMe img {
+    margin-top: 35px;
+  }
+  body .header .line-wrapp {
+    display: block;
+  }
+body .header .logoBlock {
+
+}
+
+body .header .menu {
+margin-bottom: 50px;
+position: relative;
+left: 3%;
+display: none;
+}
+body .header .menu li {
+  margin-right: 10px;
+}
+body .header .leftsideHeader h1 {
+  font-size: 60px;
+}
+body .header .leftsideHeader {
+  margin-top: 0px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
